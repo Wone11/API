@@ -1,1 +1,6 @@
 .env
+/**/__pycache/
+/migrations
+/env
+env
+env/*
