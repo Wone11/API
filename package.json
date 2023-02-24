@@ -1,0 +1,36 @@
+{
+  "name": "authentication",
+  "version": "1.0.0",
+  "description": "Free Code exercise create a Json file",
+  "main": "main.js",
+  "scripts": {
+    "dev": "webpack --mode development ./Authentications/Frontend/src/app.js --output ./Authentications/Frontend/src/static/frontend/main.js",
+    "build": "webpack --mode production ./Authentications/Frontend/src/app.js --output ./Authentications/Frontend/src/static/frontend/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wone11/API.git"
+  },
+  "keywords": [],
+  "author": "Gandayiki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wone11/API/issues"
+  },
+  "homepage": "https://github.com/Wone11/API#readme",
+  "dependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "mongoose": "^6.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
