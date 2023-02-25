@@ -4,6 +4,8 @@ import App   from './Components/App'
 
 export const app = () => {
   return (
-    <div>app</div>
-  )
+    <>
+          <App />
+    </>
+    )
 }
