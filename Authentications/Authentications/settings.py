@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
+from distutils import config
 import os
 from pathlib import Path
 
@@ -38,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "Controllers",
+    "Users",
     "rest_framework",
+    "rest_framework.authtoken"
 ]
 
 MIDDLEWARE = [
@@ -80,7 +83,7 @@ WSGI_APPLICATION = 'Authentications.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'Account-Management.db',
     }
 }
 
@@ -102,6 +105,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+REST_FRAMEWORK={
+    'DEFAULT_AUTHENTICATION_CLASSES':[
+    'rest_framework.authentication.TokenAuthentication',
+    ]
+}
+
+AUTH_USER_MODEL="Users.Users"
+ACCOUNT_UNIQUE_EMAIL=True
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
