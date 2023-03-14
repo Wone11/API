@@ -3,7 +3,7 @@
 Free Code exercise create a Json file
 
 
-# Django React full authenticated project ..
+# Django React fully authenticated project ..
 
 => backend drango started Rest API for user controller
 
